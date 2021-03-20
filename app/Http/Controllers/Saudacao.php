@@ -14,6 +14,6 @@ class Saudacao extends Controller
      */
     public function __invoke(string $nome = 'Treinaweb')
     {
-        echo "Ola $nome";
+        return view('saudacao')->with('nome', $nome);
     }
 }

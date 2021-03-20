@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Saudacao</title>
 </head>
-    <body>
-        <h1>Home</h1>
-        <p>Bem vindo ao sistema</p>
-    </body>
+<body>
+    <h1>Ola <?= $nome ?></h1>
+</body>
 </html>

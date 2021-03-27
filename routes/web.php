@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/', [SiteController::class, 'index']);
+Route::get('/', [SiteController::class, 'index'])->name('index');
 Route::get('/sobre', [SiteController::class, 'sobre']);
 Route::get('/contato', [SiteController::class, 'contato']);
 Route::get('/servicos', [SiteController::class, 'servicos']);

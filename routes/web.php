@@ -1,8 +1,9 @@
 <?php
 
+use App\Http\Controllers\ClientController;
 use App\Http\Controllers\Saudacao;
 use App\Http\Controllers\SiteController;
-use App\Models\Client;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,6 +29,4 @@ Route::get('/servico/{id}', [SiteController::class, 'servico']);
 
 Route::get('/saudacao/{nome?}', Saudacao::class);
 
-Route::get('/clients', function() {
-    dd(Client::get());
-});
+Route::get('/clients', [ClientController::class, 'index']);

@@ -47,4 +47,17 @@ class ClientController extends Controller
             'client' => $client
         ]);
     }
+
+    public function update(int $id, Request $request)
+    {
+        $client = Client::find($id);
+
+        $client->update([
+            'nome' => $request->nome,
+            'endereco' => $request->endereco,
+            'observacao' => $request->observacao
+        ]);
+
+        return redirect('/clients');
+    }
 }

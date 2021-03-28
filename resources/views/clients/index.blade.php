@@ -23,5 +23,7 @@
                 </tr>
             @endforeach
         </tbody>
-        </table>
+    </table>
+
+    <a class="btn btn-success" href="{{ route('clients.create') }}">Novo Cliente</a>
 @endsection    

@@ -32,3 +32,4 @@ Route::get('/saudacao/{nome?}', Saudacao::class);
 Route::get('/clients', [ClientController::class, 'index'])->name('clients.index');
 Route::get('/clients/create', [ClientController::class, 'create'])->name('clients.create');
 Route::get('/clients/{id}', [ClientController::class, 'show'])->name('clients.show');
+Route::post('/clients', [ClientController::class, 'store'])->name('clients.store');

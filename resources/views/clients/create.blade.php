@@ -4,7 +4,8 @@
 
 @section('conteudo')
     <h1>Novo Cliente</h1>
-    <form action="">
+    <form action="{{ route('clients.store') }}" method="POST">
+        @csrf
         <div class="mb-3">
             <label for="nome" class="form-label">Nome</label>
             <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite o nome">

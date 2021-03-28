@@ -19,7 +19,9 @@
                     <th scope="row">{{ $client->id }}</th>
                     <td><a href="{{ route('clients.show', $client) }}">{{ $client->nome }}</a></td>
                     <td>{{ $client->endereco }}</td>
-                    <td></td>
+                    <td>
+                        <a class="btn btn-primary" href="{{ route('clients.edit', $client) }}">Atualizar</a>
+                    </td>
                 </tr>
             @endforeach
         </tbody>

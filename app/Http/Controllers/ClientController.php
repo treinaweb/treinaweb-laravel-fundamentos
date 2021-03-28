@@ -38,4 +38,13 @@ class ClientController extends Controller
 
         return redirect('/clients');
     }
+
+    public function edit(int $id)
+    {
+        $client = Client::find($id);
+
+        return view('clients.edit', [
+            'client' => $client
+        ]);
+    }
 }

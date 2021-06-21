@@ -1,4 +1,4 @@
-# TreinaWeb: curso ["Laravel - Eloquent ORM"](https://www.treinaweb.com.br/curso/laravel-fundamentos)
+# TreinaWeb: curso ["Laravel - Fundamentos"](https://www.treinaweb.com.br/curso/laravel-fundamentos)
 
 #### Lista de commits
 Aula | Video | Commit | Link 
